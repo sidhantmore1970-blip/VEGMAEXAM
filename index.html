@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vagmi Exim – Import, Export & Trading</title>
+  <meta name="description" content="Vagmi Exim is a trusted Import, Export and Trading company dealing in Minerals, Agri Products, Chemicals, Dehydrated Powders and more. Based in Latur, Maharashtra, India." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="progress-bar"></div>
+
+  <!-- NAV -->
+  <nav class="nav" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="logo logo-img-wrap">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="62 8 84 178" width="38" height="80" aria-label="Vagmi Exim Logo"><path fill="#565757" stroke="none" fill-rule="evenodd" d="M -28.0 -7.6 L 144.6 -7.6 L 144.6 199.6 L -28.0 199.6 L -28.0 -7.6 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 15.4 L 87.0 21.1 L 95.3 41.3 L 103.5 58.0 L 119.5 90.4 L 136.0 123.4 L 142.7 136.8 L 146.4 136.9 L 145.4 132.1 L 140.1 117.8 L 123.9 84.7 L 107.7 52.1 L 99.5 35.2 L 89.3 18.1 L 86.3 15.4 Z"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 100.6 37.5 L 99.0 48.9 L 106.0 48.6 L 106.9 50.4 L 102.7 56.4 L 101.8 54.5 L 103.3 43.2 L 96.3 43.4"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 107.7 52.1 L 103.5 58.0 L 104.4 60.0 L 111.3 59.4 L 109.8 70.7 L 116.6 70.0 L 115.1 81.5 L 122.0 81.0 L 123.0 82.9 L 118.7 88.8 L 117.8 87.0 L 119.3 75.6 L 112.4 76.0 L 114.0 64.8 L 107.1 65.3 L 108.6 54.0"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 123.9 84.7 L 119.6 90.6 L 120.5 92.4 L 127.4 91.9 L 125.9 103.1 L 132.7 102.7 L 131.2 114.0 L 138.1 113.6 L 139.0 115.4 L 134.8 121.2 L 133.9 119.3 L 135.5 108.3 L 128.5 108.5 L 130.1 97.3 L 123.2 97.8 L 124.7 86.4"/><path fill="#e40057" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 84.4 40.1 L 84.5 15.6 C 84.4 14.6 85.2 11.3 87.1 12.8 C 90.3 14.8 148.4 112.6 148.4 112.6"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 12.4 C 85.3 12.4 84.5 13.8 84.5 15.4 C 84.5 17.0 85.3 18.4 86.3 18.4 C 87.2 18.4 88.0 17.0 88.0 15.4 C 88.0 13.8 87.2 12.4 86.3 12.4 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 86.3 13.3 C 85.6 13.3 85.1 14.3 85.1 15.4 C 85.1 16.5 85.6 17.5 86.3 17.5 C 87.0 17.5 87.5 16.5 87.5 15.4 C 87.5 14.3 87.0 13.3 86.3 13.3 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 14.5 C 86.0 14.5 85.8 14.9 85.8 15.4 C 85.8 15.9 86.0 16.3 86.3 16.3 C 86.5 16.3 86.8 15.9 86.8 15.4 C 86.8 14.9 86.5 14.5 86.3 14.5 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.1 40.0 L 82.9 40.0 L 82.0 41.9 L 82.9 49.5 L 86.1 49.5 L 87.0 41.9 L 86.1 40.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 84.9 49.8 L 83.9 49.8 C 83.9 50.5 84.0 51.2 84.2 51.7 C 84.4 52.0 84.7 52.3 84.9 52.7 C 85.1 53.0 85.1 53.6 84.9 54.1 L 85.9 55.5 C 86.3 54.9 86.4 54.0 86.3 52.7 C 86.1 52.0 85.8 51.4 85.4 50.9 C 85.2 50.6 85.0 50.2 84.9 49.8 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 84.1 54.5 C 83.6 54.1 83.4 53.4 83.3 52.6 C 83.2 52.3 82.8 52.0 82.7 52.3 C 82.7 53.6 82.9 54.7 83.3 55.5 C 83.7 56.1 84.1 56.5 84.7 56.5 C 85.0 56.4 85.2 56.3 85.3 56.2 C 85.0 55.8 84.8 55.4 84.5 55.0 C 84.4 54.8 84.2 54.6 84.1 54.5 Z"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 83.1 55.7 L 77.1 65.0"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 77.3 65.6 C 77.3 65.3 77.1 65.0 76.9 65.0 C 76.6 65.0 76.4 65.3 76.4 65.6"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 98.3 67.3 L 98.3 65.6 L 70.5 65.6 L 70.5 67.3 L 69.5 67.3 L 69.5 85.3 L 70.5 85.3 L 70.5 87.3 L 98.3 87.3 L 98.3 85.3 L 99.4 85.3 L 99.4 67.3 L 98.3 67.3 Z"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 100.2 65.2 L 99.1 65.2 L 99.1 66.5 L 100.2 66.5 L 100.2 65.2 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 96.7 67.3 L 96.0 67.3 L 96.0 85.2 L 96.7 85.2 L 96.7 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 98.3 67.3 L 97.6 67.3 L 97.6 85.2 L 98.3 85.2 L 98.3 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 95.2 67.3 L 94.4 67.3 L 94.4 85.2 L 95.2 85.2 L 95.2 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 93.6 67.3 L 92.8 67.3 L 92.8 85.2 L 93.6 85.2 L 93.6 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 92.0 67.3 L 91.2 67.3 L 91.2 85.2 L 92.0 85.2 L 92.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 90.4 67.3 L 89.6 67.3 L 89.6 85.2 L 90.4 85.2 L 90.4 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 88.8 67.3 L 88.0 67.3 L 88.0 85.2 L 88.8 85.2 L 88.8 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 87.2 67.3 L 86.4 67.3 L 86.4 85.2 L 87.2 85.2 L 87.2 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 85.6 67.3 L 84.8 67.3 L 84.8 85.2 L 85.6 85.2 L 85.6 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 84.0 67.3 L 83.2 67.3 L 83.2 85.2 L 84.0 85.2 L 84.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 82.4 67.3 L 81.7 67.3 L 81.7 85.2 L 82.4 85.2 L 82.4 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 80.8 67.3 L 80.1 67.3 L 80.1 85.2 L 80.8 85.2 L 80.8 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 79.3 67.3 L 78.5 67.3 L 78.5 85.2 L 79.3 85.2 L 79.3 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 77.7 67.3 L 76.9 67.3 L 76.9 85.2 L 77.7 85.2 L 77.7 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 76.0 67.3 L 75.3 67.3 L 75.3 85.2 L 76.0 85.2 L 76.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 74.5 67.3 L 73.7 67.3 L 73.7 85.2 L 74.5 85.2 L 74.5 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 72.9 67.3 L 72.1 67.3 L 72.1 85.2 L 72.9 85.2 L 72.9 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 71.3 67.3 L 70.5 67.3 L 70.5 85.2 L 71.3 85.2 L 71.3 67.3 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 86.0 54.0 C 86.0 54.0 86.1 52.7 85.7 52.3 C 85.4 52.1 85.3 52.4 85.4 52.5 C 85.4 52.6 85.7 53.7 85.3 54.6 C 85.4 54.8 85.6 55.1 85.6 55.1 C 85.6 55.1 85.9 54.7 86.0 54.0 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.1 55.0 C 84.0 54.9 83.8 55.4 84.1 55.7 C 84.5 55.9 84.8 55.8 85.0 55.8 C 84.9 55.7 84.7 55.3 84.5 55.0 C 84.4 55.0 84.2 55.0 84.1 55.0 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.5 41.6 C 84.0 41.6 83.7 42.2 83.7 42.9 C 83.7 43.6 84.0 44.2 84.5 44.2 C 84.9 44.2 85.3 43.6 85.3 42.9 C 85.3 42.2 84.9 41.6 84.5 41.6 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.4 47.0 C 84.2 47.0 84.0 47.4 84.0 47.7 C 84.0 48.1 84.2 48.4 84.4 48.4 C 84.7 48.4 84.8 48.1 84.8 47.7 C 84.8 47.4 84.7 47.0 84.4 47.0 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 83.2 48.4 C 83.1 48.4 83.0 48.6 83.0 48.8 C 83.0 49.0 83.1 49.2 83.2 49.2 C 83.3 49.2 83.4 49.0 83.4 48.8 C 83.4 48.6 83.3 48.4 83.2 48.4 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 85.7 48.4 C 85.6 48.4 85.5 48.6 85.5 48.8 C 85.5 49.0 85.6 49.2 85.7 49.2 C 85.9 49.2 86.0 49.0 86.0 48.8 C 86.0 48.6 85.9 48.4 85.7 48.4 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 86.6 41.9 C 86.5 41.9 86.4 42.0 86.4 42.2 C 86.4 42.5 86.5 42.6 86.6 42.6 C 86.7 42.6 86.8 42.5 86.8 42.2 C 86.8 42.0 86.7 41.9 86.6 41.9 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 82.4 41.9 C 82.2 41.9 82.2 42.0 82.2 42.2 C 82.2 42.5 82.2 42.6 82.4 42.6 C 82.5 42.6 82.6 42.5 82.6 42.2 C 82.6 42.0 82.5 41.9 82.4 41.9 Z"/></svg>
+        <span class="logo-wordmark"><span class="wm-vagmi">VAGMI</span><span class="wm-exim">EXIM</span></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+
+        <!-- Products dropdown -->
+        <li class="has-dropdown">
+          <a href="#products" class="dropdown-trigger">Products <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown">
+            <div class="dropdown-col">
+              <p class="drop-heading">⛏️ Coal &amp; Minerals</p>
+              <a href="#products" class="drop-item">Most grades of coal (4000–6200 GAR)</a>
+              <a href="#products" class="drop-item">South African Coal (RB1, RB2, RB3)</a>
+              <a href="#products" class="drop-item">Iron Ore</a>
+              <a href="#products" class="drop-item">Manganese Ore</a>
+              <a href="#products" class="drop-item">Calcium Carbide</a>
+            </div>
+            <div class="dropdown-col">
+              <p class="drop-heading">🌾 Agricultural Grains</p>
+              <a href="#products" class="drop-item">Wheat, Rice, Maize</a>
+              <a href="#products" class="drop-item">Split Pulses</a>
+              <a href="#products" class="drop-item">Kabuli Chana</a>
+              <a href="#products" class="drop-item">Basmati Rice</a>
+              <a href="#products" class="drop-item">Indian Spices</a>
+              <a href="#products" class="drop-item">Soybean &amp; Oil Seeds</a>
+            </div>
+            <div class="dropdown-col">
+              <p class="drop-heading">🧪 Chemicals &amp; Feed</p>
+              <a href="#products" class="drop-item">Industrial Chemicals</a>
+              <a href="#products" class="drop-item">Specialty Chemicals</a>
+              <a href="#products" class="drop-item">Soya De-Oiled Cake (DOC)</a>
+              <a href="#products" class="drop-item">Animal Feed Blends</a>
+            </div>
+          </div>
+        </li>
+
+        <!-- Powders dropdown -->
+        <li class="has-dropdown">
+          <a href="#powders" class="dropdown-trigger">Powders <span class="nav-arrow">▾</span></a>
+          <div class="nav-dropdown">
+            <div class="dropdown-col">
+              <p class="drop-heading">🥕 Vegetable Powders</p>
+              <a href="#powders" class="drop-item">Carrot Powder</a>
+              <a href="#powders" class="drop-item">Tomato Powder</a>
+              <a href="#powders" class="drop-item">Red Onion Powder</a>
+              <a href="#powders" class="drop-item">Potato Powder</a>
+              <a href="#powders" class="drop-item">Garlic Powder</a>
+              <a href="#powders" class="drop-item">Ginger Powder</a>
+              <a href="#powders" class="drop-item">Mint Powder</a>
+            </div>
+            <div class="dropdown-col">
+              <p class="drop-heading">🍋 Fruit Powders</p>
+              <a href="#powders" class="drop-item">Lemon Powder</a>
+              <a href="#powders" class="drop-item">Orange Extract Powder</a>
+              <a href="#powders" class="drop-item">Pomegranate Powder</a>
+              <a href="#powders" class="drop-item">Papaya Powder</a>
+              <a href="#powders" class="drop-item">Banana Powder</a>
+            </div>
+            <div class="dropdown-col">
+              <p class="drop-heading">🌶️ Spice Powders</p>
+              <a href="#powders" class="drop-item">Red Chilli Powder</a>
+              <a href="#powders" class="drop-item">Turmeric Powder</a>
+              <a href="#powders" class="drop-item">Custom blends on request</a>
+              <a href="#contact" class="drop-cta">Request a Product →</a>
+            </div>
+          </div>
+        </li>
+
+        <li><a href="#vision">Vision</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#guarantee">Guarantee</a></li>
+        <li><a href="#identity">Brand Card</a></li>
+        <li><a href="#contact" class="nav-cta">Contact Us</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about" onclick="closeMobile()">About</a>
+
+      <div class="mob-section-head" onclick="toggleMobSection(this)">
+        Products <span>▾</span>
+      </div>
+      <div class="mob-sub-links">
+        <a href="#products" onclick="closeMobile()">⛏️ Coal &amp; Minerals</a>
+        <a href="#products" onclick="closeMobile()">🌾 Agricultural Grains</a>
+        <a href="#products" onclick="closeMobile()">🧪 Chemicals</a>
+        <a href="#products" onclick="closeMobile()">🐄 Animal Feed</a>
+      </div>
+
+      <div class="mob-section-head" onclick="toggleMobSection(this)">
+        Powders <span>▾</span>
+      </div>
+      <div class="mob-sub-links">
+        <a href="#powders" onclick="closeMobile()">🥕 Carrot · Tomato · Onion</a>
+        <a href="#powders" onclick="closeMobile()">🧄 Garlic · Ginger · Potato</a>
+        <a href="#powders" onclick="closeMobile()">🍋 Lemon · Orange · Pomegranate</a>
+        <a href="#powders" onclick="closeMobile()">🌶️ Chilli · Turmeric · Mint</a>
+      </div>
+
+      <a href="#vision" onclick="closeMobile()">Vision</a>
+      <a href="#process" onclick="closeMobile()">Process</a>
+      <a href="#guarantee" onclick="closeMobile()">Guarantee</a>
+      <a href="#identity" onclick="closeMobile()">Brand Card</a>
+      <a href="#contact" onclick="closeMobile()">Contact Us</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. 2017 · Latur, Maharashtra, India</p>
+      <h1 class="hero-title">Global Trade.<br><em>Trusted Hands.</em></h1>
+      <p class="hero-sub">Import, Export & Trading across Minerals, Agricultural Goods, Dehydrated Powders, Chemicals and more — delivered with guaranteed quality and competitive pricing.</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn-primary">Explore Products</a>
+        <a href="#contact" class="btn-ghost">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">↓</div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section about-section" id="about">
+    <div class="container about-grid">
+      <div class="about-text reveal">
+        <span class="label">Who We Are</span>
+        <h2>A One-Stop Trading Partner for Global Markets</h2>
+        <p>Established in 2017, Vagmi Exim is an import, export and trading company with deep roots in Latur, Maharashtra. We specialise in a wide range of goods — from coal and minerals to agricultural grains, dehydrated vegetable powders and Indian spices — serving buyers and sellers across multiple geographies.</p>
+        <p>Our commitment is simple: transparent transactions, consistent quality, and long-term partnerships built on trust.</p>
+        <a href="#contact" class="btn-primary">Work With Us</a>
+      </div>
+      <div class="about-stats reveal delay-1">
+        <div class="stat-card">
+          <span class="stat-num" data-target="2017">2017</span>
+          <span class="stat-label">Year Established</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num" data-target="7" data-suffix="+">7+</span>
+          <span class="stat-label">Product Categories</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">LC / SBLC</span>
+          <span class="stat-label">Payment Methods</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-num">FOB · CFR · CIF</span>
+          <span class="stat-label">Delivery Terms</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="section products-section" id="products">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">What We Offer</span>
+        <h2>Our Product Categories</h2>
+        <p class="section-sub">A one-stop, trouble-free service for mineral and agricultural transactions — competitive pricing, guaranteed consistency.</p>
+      </div>
+      <div class="products-grid">
+        <div class="product-card reveal">
+          <div class="product-icon">⛏️</div>
+          <h3>Coal & Minerals</h3>
+          <ul>
+            <li>Most grades of coal (4000–6200 GAR)</li>
+            <li>South African Coal (RB1, RB2, RB3)</li>
+            <li>Iron Ore</li>
+            <li>Manganese Ore</li>
+            <li>Calcium Carbide</li>
+          </ul>
+        </div>
+        <div class="product-card reveal delay-1">
+          <div class="product-icon">🌾</div>
+          <h3>Agricultural Grains</h3>
+          <ul>
+            <li>Wheat, Rice, Maize</li>
+            <li>Split Pulses</li>
+            <li>Indian Spices</li>
+            <li>Soybean & Oil Seeds</li>
+          </ul>
+        </div>
+        <div class="product-card reveal delay-2">
+          <div class="product-icon">🌿</div>
+          <h3>Dehydrated Powders</h3>
+          <ul>
+            <li>Vegetable Powders</li>
+            <li>Fruit Powders</li>
+            <li>Spice Powders</li>
+            <li>12+ varieties available</li>
+          </ul>
+        </div>
+        <div class="product-card reveal delay-1">
+          <div class="product-icon">🧪</div>
+          <h3>Chemicals</h3>
+          <ul>
+            <li>Industrial Chemicals</li>
+            <li>Specialty Chemicals</li>
+            <li>More added on request</li>
+          </ul>
+        </div>
+        <div class="product-card reveal delay-2">
+          <div class="product-icon">🐄</div>
+          <h3>Animal Feed</h3>
+          <ul>
+            <li>Soya De-Oiled Cake (DOC)</li>
+            <li>Other feed ingredients</li>
+            <li>Customised blends</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="trade-terms reveal">
+        <h3>Trading Terms We Support</h3>
+        <div class="terms-grid">
+          <div class="term-pill">Letter of Credit (LC)</div>
+          <div class="term-pill">SBLC / BG</div>
+          <div class="term-pill">Cash / TT Stage Payments</div>
+          <div class="term-pill">FOB Barge</div>
+          <div class="term-pill">FOB MV</div>
+          <div class="term-pill">CFR / CIF</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POWDER GALLERY — PPT SLIDE STYLE -->
+  <section class="powder-section" id="powders">
+    <div class="powder-header">
+      <div class="powder-header-inner">
+        <span class="label">Sample of Materials</span>
+        <h2>Dehydrated Vegetable &amp; Fruit Powders</h2>
+        <p>Premium quality, spray-dried and dehydrated powders — available for bulk export worldwide.</p>
+      </div>
+    </div>
+
+    <div class="slides-grid">
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="CARROT_POWDER.webp" alt="Carrot Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Carrot Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="MINT_POWDER.jpg" alt="Mint Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Dehydrated Mint Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="GARLIC_POWDER.jpg" alt="Garlic Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Garlic Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="GINGER_POWDER.jpg" alt="Ginger Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Ginger Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="POMEGRANATE_POWDER.jpg" alt="Pomegranate Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Pomegranate Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="LEMON_POWDER.jpg" alt="Lemon Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Lemon Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="ORANGE_POWDER.png" alt="Orange Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Orange Extract Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="PAPAYA_POWDER.jpg" alt="Papaya Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Papaya Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="Potato-Powder.jpg" alt="Potato Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Potato Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="RED_ONION_POWDER.jpg" alt="Red Onion Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Red Onion Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="BANANA_POWDER.webp" alt="Banana Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Spray-Dried Banana Powder</span>
+        </div>
+      </div>
+
+      <div class="slide-card">
+        <div class="slide-img-wrap">
+          <img src="TOMATO_POWDER.jpg" alt="Tomato Powder" loading="lazy" />
+        </div>
+        <div class="slide-label">
+          <span class="slide-cat">SAMPLE OF MATERIALS</span>
+          <span class="slide-name">Tomato Powder</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="powder-cta">
+      <p>Looking for a specific powder not listed here? We can source or produce on request.</p>
+      <a href="#contact" class="btn-primary">Request a Product</a>
+    </div>
+  </section>
+
+  <!-- VISION -->
+  <section class="section vision-section" id="vision">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label white-label">Our Vision & Values</span>
+        <h2 class="white-h">Built on Trust. Driven by Results.</h2>
+      </div>
+      <div class="vision-grid">
+        <div class="vision-box reveal">
+          <div class="vision-icon">🌍</div>
+          <h3>Our Vision</h3>
+          <p>To become the most trusted company across multiple geographies through unparalleled expertise, commitment, and drive for results.</p>
+        </div>
+        <div class="values-list reveal delay-1">
+          <h3>Core Values</h3>
+          <div class="value-item">
+            <span class="value-dot"></span>
+            <p>Build relationships based on integrity, trust, and respect — with employees and customers alike.</p>
+          </div>
+          <div class="value-item">
+            <span class="value-dot"></span>
+            <p>We exist to serve our customers — their success is our benchmark.</p>
+          </div>
+          <div class="value-item">
+            <span class="value-dot"></span>
+            <p>Promote continuous innovation and process improvements in every transaction.</p>
+          </div>
+          <div class="value-item">
+            <span class="value-dot"></span>
+            <p>Nurture our people with challenging, rewarding environments that grow talent.</p>
+          </div>
+          <div class="value-item">
+            <span class="value-dot"></span>
+            <p>Champion quality and cost efficiencies at every step of the supply chain.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS FLOWCHART -->
+  <section class="section process-section" id="process">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">How We Work</span>
+        <h2>Document Flow — Mineral Transactions</h2>
+        <p class="section-sub">A clear four-phase process that protects both buyer and seller from negotiation to payment.</p>
+      </div>
+      <div class="flow-grid">
+        <div class="flow-phase reveal">
+          <div class="phase-num">01</div>
+          <div class="phase-label">Negotiation</div>
+          <ul>
+            <li>Request for Offer &amp; LOI</li>
+            <li>Specification &amp; Certificate of Analysis</li>
+            <li>Full Corporate Offer (FCO)</li>
+            <li>Price &amp; Conditions agreed</li>
+            <li>Site Inspection</li>
+          </ul>
+        </div>
+        <div class="flow-arrow reveal">→</div>
+        <div class="flow-phase reveal delay-1">
+          <div class="phase-num">02</div>
+          <div class="phase-label">Contract</div>
+          <ul>
+            <li>ICPO issued</li>
+            <li>Contract Signed</li>
+            <li>LC / SBLC / BG Applied</li>
+            <li>Surveyor / Inspection Assigned</li>
+            <li>MV &amp; Barge Nominations</li>
+          </ul>
+        </div>
+        <div class="flow-arrow reveal">→</div>
+        <div class="flow-phase reveal delay-2">
+          <div class="phase-num">03</div>
+          <div class="phase-label">Delivery</div>
+          <ul>
+            <li>Hauling / Stevedoring</li>
+            <li>Loading &amp; Transshipment</li>
+            <li>Inspection</li>
+            <li>Payment to Mine Contractors</li>
+            <li>MV &amp; Barge Payments</li>
+          </ul>
+        </div>
+        <div class="flow-arrow reveal">→</div>
+        <div class="flow-phase reveal delay-3">
+          <div class="phase-num">04</div>
+          <div class="phase-label">Payment</div>
+          <ul>
+            <li>Pro Forma Invoice</li>
+            <li>Packing List</li>
+            <li>Certificate of Origin</li>
+            <li>Bill of Lading</li>
+            <li>LC / TT Final Payment</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GUARANTEE -->
+  <section class="section guarantee-section" id="guarantee">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="label">Our Promise</span>
+        <h2>What We Guarantee</h2>
+      </div>
+      <div class="guarantee-grid">
+        <div class="guarantee-card reveal">
+          <span class="g-icon">✅</span>
+          <h3>Guaranteed Quality</h3>
+          <p>Every shipment meets agreed specifications with full documentation and third-party inspection.</p>
+        </div>
+        <div class="guarantee-card reveal delay-1">
+          <span class="g-icon">🔒</span>
+          <h3>Risk-Free Contracts</h3>
+          <p>Mutually agreed contract conditions protect all parties throughout the transaction lifecycle.</p>
+        </div>
+        <div class="guarantee-card reveal delay-2">
+          <span class="g-icon">📦</span>
+          <h3>Stable Supply</h3>
+          <p>Consistent large-quantity supply over the long term — so your operations never face shortages.</p>
+        </div>
+        <div class="guarantee-card reveal delay-3">
+          <span class="g-icon">💰</span>
+          <h3>Cost Savings</h3>
+          <p>Competitive pricing and efficient logistics translate to real savings on every deal.</p>
+        </div>
+        <div class="guarantee-card reveal">
+          <span class="g-icon">🤝</span>
+          <h3>True Partnership</h3>
+          <p>We work as your long-term partner, not just a vendor — your growth is our business.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BRAND CARD -->
+  <section class="section bcard-section" id="identity">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom:3rem">
+        <span class="label" style="color:var(--gold-light)">Official Identity</span>
+        <h2 style="color:var(--white)">Our Brand &amp; Contact Card</h2>
+        <p style="color:rgba(255,255,255,0.65)">A trusted name in global trade since 2017.</p>
+      </div>
+      <div class="bcard-inner">
+        <div class="bcard-svg-wrap reveal">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 288 192" width="100%" height="100%" preserveAspectRatio="xMidYMid meet"><path fill="#565757" stroke="none" fill-rule="evenodd" d="M -28.0 -7.6 L 144.6 -7.6 L 144.6 199.6 L -28.0 199.6 L -28.0 -7.6 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 144.6 -7.6 L 316.0 -7.6 L 316.0 199.6 L 144.6 199.6 L 144.6 -7.6 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 15.4 L 87.0 21.1 L 95.3 41.3 L 103.5 58.0 L 119.5 90.4 L 136.0 123.4 L 142.7 136.8 L 146.4 136.9 L 145.4 132.1 L 140.1 117.8 L 123.9 84.7 L 107.7 52.1 L 99.5 35.2 L 89.3 18.1 L 86.3 15.4 Z"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 100.6 37.5 L 99.0 48.9 L 106.0 48.6 L 106.9 50.4 L 102.7 56.4 L 101.8 54.5 L 103.3 43.2 L 96.3 43.4"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 107.7 52.1 L 103.5 58.0 L 104.4 60.0 L 111.3 59.4 L 109.8 70.7 L 116.6 70.0 L 115.1 81.5 L 122.0 81.0 L 123.0 82.9 L 118.7 88.8 L 117.8 87.0 L 119.3 75.6 L 112.4 76.0 L 114.0 64.8 L 107.1 65.3 L 108.6 54.0"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 123.9 84.7 L 119.6 90.6 L 120.5 92.4 L 127.4 91.9 L 125.9 103.1 L 132.7 102.7 L 131.2 114.0 L 138.1 113.6 L 139.0 115.4 L 134.8 121.2 L 133.9 119.3 L 135.5 108.3 L 128.5 108.5 L 130.1 97.3 L 123.2 97.8 L 124.7 86.4"/><path fill="#e40057" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 84.4 40.1 L 84.5 15.6 C 84.4 14.6 85.2 11.3 87.1 12.8 C 90.3 14.8 148.4 112.6 148.4 112.6"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 12.4 C 85.3 12.4 84.5 13.8 84.5 15.4 C 84.5 17.0 85.3 18.4 86.3 18.4 C 87.2 18.4 88.0 17.0 88.0 15.4 C 88.0 13.8 87.2 12.4 86.3 12.4 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 86.3 13.3 C 85.6 13.3 85.1 14.3 85.1 15.4 C 85.1 16.5 85.6 17.5 86.3 17.5 C 87.0 17.5 87.5 16.5 87.5 15.4 C 87.5 14.3 87.0 13.3 86.3 13.3 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 14.5 C 86.0 14.5 85.8 14.9 85.8 15.4 C 85.8 15.9 86.0 16.3 86.3 16.3 C 86.5 16.3 86.8 15.9 86.8 15.4 C 86.8 14.9 86.5 14.5 86.3 14.5 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.1 40.0 L 82.9 40.0 L 82.0 41.9 L 82.9 49.5 L 86.1 49.5 L 87.0 41.9 L 86.1 40.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 84.9 49.8 L 83.9 49.8 C 83.9 50.5 84.0 51.2 84.2 51.7 C 84.4 52.0 84.7 52.3 84.9 52.7 C 85.1 53.0 85.1 53.6 84.9 54.1 L 85.9 55.5 C 86.3 54.9 86.4 54.0 86.3 52.7 C 86.1 52.0 85.8 51.4 85.4 50.9 C 85.2 50.6 85.0 50.2 84.9 49.8 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 84.1 54.5 C 83.6 54.1 83.4 53.4 83.3 52.6 C 83.2 52.3 82.8 52.0 82.7 52.3 C 82.7 53.6 82.9 54.7 83.3 55.5 C 83.7 56.1 84.1 56.5 84.7 56.5 C 85.0 56.4 85.2 56.3 85.3 56.2 C 85.0 55.8 84.8 55.4 84.5 55.0 C 84.4 54.8 84.2 54.6 84.1 54.5 Z"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 83.1 55.7 L 77.1 65.0"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 77.3 65.6 C 77.3 65.3 77.1 65.0 76.9 65.0 C 76.6 65.0 76.4 65.3 76.4 65.6"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 98.3 67.3 L 98.3 65.6 L 70.5 65.6 L 70.5 67.3 L 69.5 67.3 L 69.5 85.3 L 70.5 85.3 L 70.5 87.3 L 98.3 87.3 L 98.3 85.3 L 99.4 85.3 L 99.4 67.3 L 98.3 67.3 Z"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 100.2 65.2 L 99.1 65.2 L 99.1 66.5 L 100.2 66.5 L 100.2 65.2 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 96.7 67.3 L 96.0 67.3 L 96.0 85.2 L 96.7 85.2 L 96.7 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 98.3 67.3 L 97.6 67.3 L 97.6 85.2 L 98.3 85.2 L 98.3 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 95.2 67.3 L 94.4 67.3 L 94.4 85.2 L 95.2 85.2 L 95.2 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 93.6 67.3 L 92.8 67.3 L 92.8 85.2 L 93.6 85.2 L 93.6 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 92.0 67.3 L 91.2 67.3 L 91.2 85.2 L 92.0 85.2 L 92.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 90.4 67.3 L 89.6 67.3 L 89.6 85.2 L 90.4 85.2 L 90.4 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 88.8 67.3 L 88.0 67.3 L 88.0 85.2 L 88.8 85.2 L 88.8 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 87.2 67.3 L 86.4 67.3 L 86.4 85.2 L 87.2 85.2 L 87.2 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 85.6 67.3 L 84.8 67.3 L 84.8 85.2 L 85.6 85.2 L 85.6 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 84.0 67.3 L 83.2 67.3 L 83.2 85.2 L 84.0 85.2 L 84.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 82.4 67.3 L 81.7 67.3 L 81.7 85.2 L 82.4 85.2 L 82.4 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 80.8 67.3 L 80.1 67.3 L 80.1 85.2 L 80.8 85.2 L 80.8 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 79.3 67.3 L 78.5 67.3 L 78.5 85.2 L 79.3 85.2 L 79.3 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 77.7 67.3 L 76.9 67.3 L 76.9 85.2 L 77.7 85.2 L 77.7 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 76.0 67.3 L 75.3 67.3 L 75.3 85.2 L 76.0 85.2 L 76.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 74.5 67.3 L 73.7 67.3 L 73.7 85.2 L 74.5 85.2 L 74.5 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 72.9 67.3 L 72.1 67.3 L 72.1 85.2 L 72.9 85.2 L 72.9 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 71.3 67.3 L 70.5 67.3 L 70.5 85.2 L 71.3 85.2 L 71.3 67.3 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 86.0 54.0 C 86.0 54.0 86.1 52.7 85.7 52.3 C 85.4 52.1 85.3 52.4 85.4 52.5 C 85.4 52.6 85.7 53.7 85.3 54.6 C 85.4 54.8 85.6 55.1 85.6 55.1 C 85.6 55.1 85.9 54.7 86.0 54.0 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.1 55.0 C 84.0 54.9 83.8 55.4 84.1 55.7 C 84.5 55.9 84.8 55.8 85.0 55.8 C 84.9 55.7 84.7 55.3 84.5 55.0 C 84.4 55.0 84.2 55.0 84.1 55.0 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.5 41.6 C 84.0 41.6 83.7 42.2 83.7 42.9 C 83.7 43.6 84.0 44.2 84.5 44.2 C 84.9 44.2 85.3 43.6 85.3 42.9 C 85.3 42.2 84.9 41.6 84.5 41.6 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.4 47.0 C 84.2 47.0 84.0 47.4 84.0 47.7 C 84.0 48.1 84.2 48.4 84.4 48.4 C 84.7 48.4 84.8 48.1 84.8 47.7 C 84.8 47.4 84.7 47.0 84.4 47.0 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 83.2 48.4 C 83.1 48.4 83.0 48.6 83.0 48.8 C 83.0 49.0 83.1 49.2 83.2 49.2 C 83.3 49.2 83.4 49.0 83.4 48.8 C 83.4 48.6 83.3 48.4 83.2 48.4 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 85.7 48.4 C 85.6 48.4 85.5 48.6 85.5 48.8 C 85.5 49.0 85.6 49.2 85.7 49.2 C 85.9 49.2 86.0 49.0 86.0 48.8 C 86.0 48.6 85.9 48.4 85.7 48.4 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 86.6 41.9 C 86.5 41.9 86.4 42.0 86.4 42.2 C 86.4 42.5 86.5 42.6 86.6 42.6 C 86.7 42.6 86.8 42.5 86.8 42.2 C 86.8 42.0 86.7 41.9 86.6 41.9 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 82.4 41.9 C 82.2 41.9 82.2 42.0 82.2 42.2 C 82.2 42.5 82.2 42.6 82.4 42.6 C 82.5 42.6 82.6 42.5 82.6 42.2 C 82.6 42.0 82.5 41.9 82.4 41.9 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 144.6 140.7 L 196.2 33.1 L 186.0 27.7 L 140.1 117.8 L 136.1 123.7 L 142.1 135.7 L 144.6 140.7 Z"/><path fill="#565757" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 177.5 31.1 C 177.7 31.1 178.0 31.1 178.2 31.1 L 179.3 30.9 C 180.2 30.8 181.1 30.8 182.0 30.6 C 182.8 30.5 183.5 30.5 184.3 30.4 C 184.4 30.4 184.5 30.4 184.7 30.4 L 186.6 30.2 C 187.1 30.1 187.4 30.1 187.8 30.4 C 188.3 30.6 189.1 30.6 189.5 30.8 C 189.3 31.1 188.5 32.7 188.2 33.1 L 186.9 35.4 L 186.4 35.2 C 185.8 35.0 185.2 34.9 184.6 34.6 C 184.3 34.5 183.7 34.3 183.4 34.3 C 183.2 34.4 182.9 34.4 182.8 34.6 C 182.6 34.8 182.4 35.2 182.2 35.5 C 182.7 36.6 183.3 37.4 183.8 38.5 C 183.7 38.6 182.2 39.0 181.9 39.1 L 180.5 39.5 C 180.1 39.7 179.4 40.5 179.6 41.1 C 179.7 41.2 180.0 41.2 180.1 41.2 L 181.2 41.5 C 181.3 41.5 181.4 41.5 181.5 41.5 L 183.4 41.9 C 183.5 42.0 183.8 42.0 183.9 42.1 C 183.9 42.5 183.9 42.7 184.1 43.1 C 184.1 43.3 184.4 43.1 184.5 43.0 C 184.7 42.9 184.9 42.6 185.0 42.6 C 185.1 42.5 185.3 42.6 185.5 42.7 L 186.8 43.4 C 186.9 43.5 187.1 43.5 187.2 43.6 C 187.4 43.7 187.5 43.8 187.7 43.6 C 188.2 43.0 188.0 42.6 187.9 42.0 L 187.6 40.6 C 187.5 40.3 187.5 40.4 187.6 40.3 C 188.4 39.4 191.2 36.4 191.9 35.3 C 192.0 35.1 192.1 35.0 192.2 34.8 C 192.6 34.4 193.6 32.8 193.8 32.7 C 193.9 32.6 194.8 32.9 195.0 32.9 C 195.3 32.9 195.7 33.0 196.1 33.0 C 196.2 33.1 196.2 33.0 196.2 33.1 L 198.8 39.1 C 199.1 38.8 199.7 38.0 199.8 37.6 C 200.0 36.9 199.8 35.5 199.7 34.8 C 199.7 34.7 199.6 34.5 199.6 34.4 L 199.2 31.0 C 199.2 30.9 199.2 30.8 199.2 30.6 L 198.6 25.4 C 198.5 24.6 198.5 24.8 199.2 23.7 C 200.7 21.3 202.6 17.7 203.6 14.8 C 203.8 14.0 204.4 12.1 204.0 11.2 C 203.4 9.7 202.6 11.1 201.1 11.5 C 200.1 11.7 199.2 13.5 198.8 14.6 C 198.5 15.5 198.1 16.1 197.6 16.9 L 195.7 20.2 C 194.9 21.6 195.2 21.3 194.0 21.9 L 190.8 23.2 C 190.1 23.6 189.4 23.9 188.7 24.2 L 181.3 27.4 C 181.1 27.5 178.3 28.6 178.2 28.8 C 177.7 29.3 177.7 29.8 177.6 30.6 C 177.5 30.8 177.5 30.9 177.5 31.1 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 181.0 41.4 L 181.8 41.6 L 139.8 131.1 L 137.5 126.6 L 181.0 41.4 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 186.4 43.2 L 187.1 43.5 L 143.6 138.6 L 141.3 134.1 L 186.4 43.2 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 172.3 60.0 L 173.2 58.4 L 138.9 129.4 L 138.3 128.1 L 172.3 60.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 172.5 73.0 L 173.2 71.5 L 142.8 137.0 L 142.2 135.9 L 172.5 73.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 32.5 183.7 C 35.8 174.9 43.8 154.3 43.8 153.8 C 43.9 153.6 43.9 152.8 43.9 152.3 L 37.9 152.3 C 38.2 152.8 39.0 153.7 39.0 153.8 C 39.0 154.2 33.9 168.6 31.3 176.0 L 32.5 183.7 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 32.5 183.7 C 29.2 174.9 21.2 154.3 21.2 153.8 C 21.2 153.6 21.2 152.8 21.2 152.3 L 27.2 152.3 C 26.8 152.8 26.0 153.7 26.0 153.8 C 26.0 154.2 31.2 168.6 33.7 176.0 L 32.5 183.7 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 50.0 152.3 C 53.3 161.1 61.3 181.8 61.3 182.2 C 61.3 182.4 61.3 183.2 61.4 183.7 L 55.3 183.7 C 55.7 183.2 56.5 182.3 56.5 182.2 C 56.5 181.9 51.4 167.4 48.8 160.1 L 50.0 152.3 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 50.0 152.3 C 46.7 161.1 38.7 181.8 38.7 182.2 C 38.6 182.4 38.6 183.2 38.6 183.7 L 44.7 183.7 C 44.3 183.2 43.5 182.3 43.5 182.2 C 43.5 181.9 48.6 167.4 51.2 160.1 L 50.0 152.3 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 104.4 151.9 C 107.7 160.7 114.5 182.2 114.5 182.7 C 114.5 182.9 114.5 183.7 114.6 184.2 L 109.7 184.2 C 110.1 183.7 110.9 182.8 110.9 182.7 C 110.9 182.4 104.7 164.2 102.1 156.8 L 98.0 152.0 L 104.4 151.9 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 98.0 152.0 C 98.0 161.3 97.9 182.8 98.1 183.2 C 98.1 183.4 98.2 183.7 98.4 184.2 L 103.8 184.2 C 103.2 183.8 102.2 183.3 102.1 183.2 C 102.0 182.9 102.3 164.6 102.1 156.8 L 98.0 152.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 123.0 152.0 C 120.5 158.8 115.6 173.3 113.5 179.6 C 113.0 181.4 112.7 182.5 112.7 182.6 C 112.6 182.8 112.6 183.7 112.6 184.2 L 117.4 184.2 C 117.0 183.7 116.2 182.8 116.3 182.7 C 116.3 182.4 122.1 164.6 124.7 157.2 L 128.7 152.0 L 123.0 152.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 128.7 152.0 C 128.7 161.3 128.8 182.8 128.7 183.2 C 128.7 183.4 128.5 183.7 128.4 184.2 L 123.0 184.2 C 123.5 183.8 124.6 183.3 124.6 183.2 C 124.7 182.9 124.4 164.6 124.7 156.8 L 128.7 152.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 140.6 152.0 C 140.6 161.3 140.7 182.8 140.6 183.2 C 140.6 183.4 140.4 183.7 140.3 184.2 L 134.7 184.2 C 135.3 183.8 136.3 183.3 136.3 183.2 C 136.3 182.8 136.2 164.8 136.3 156.9 L 140.6 152.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 85.2 162.7 L 90.8 161.1 C 90.8 161.1 91.1 160.2 90.7 159.0 C 90.3 157.7 86.8 148.7 72.2 152.3 C 61.5 155.8 61.9 168.5 62.0 169.6 C 62.0 173.6 65.6 187.7 83.4 184.2 C 87.8 183.2 91.7 180.0 91.8 179.7 C 91.9 179.4 91.8 167.8 91.8 167.8 L 84.0 167.8 L 78.2 171.5 L 87.6 171.5 L 87.6 177.6 C 82.4 182.1 68.6 183.6 66.7 170.9 C 65.6 158.9 71.8 155.2 77.8 155.1 C 83.8 155.0 86.4 158.4 86.7 159.9 C 87.0 161.4 85.2 162.7 85.2 162.7 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 147.2 165.6 L 163.2 165.6 L 164.3 167.7 L 163.4 170.8 L 147.2 170.8 L 147.2 165.6 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 147.2 152.1 L 168.2 152.1 L 170.4 154.1 L 173.7 157.3 L 147.2 157.3 L 147.2 152.1 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 147.2 178.8 L 175.1 179.0 L 173.8 181.3 L 172.3 184.1 L 147.2 184.1 L 147.2 178.8 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.1 174.5 C 188.1 168.8 178.9 155.9 178.8 155.6 C 178.8 155.5 178.7 155.2 178.6 154.9 L 182.8 151.7 C 182.6 152.1 182.2 152.9 182.2 153.0 C 182.4 153.2 190.1 164.1 193.4 168.9 L 192.1 174.5 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.1 161.7 C 188.1 167.3 178.9 180.2 178.8 180.6 C 178.8 180.7 178.7 180.9 178.6 181.3 L 182.8 184.5 C 182.6 184.0 182.2 183.3 182.2 183.2 C 182.4 183.0 190.1 172.1 193.4 167.3 L 192.1 161.7 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 214.6 152.0 C 214.6 161.3 214.7 182.8 214.6 183.2 C 214.5 183.4 214.4 183.7 214.2 184.2 L 208.7 184.2 C 209.2 183.8 210.2 183.3 210.3 183.2 C 210.3 182.8 210.2 164.8 210.3 156.9 L 214.6 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 227.4 151.9 C 230.7 160.7 237.5 182.2 237.5 182.7 C 237.5 182.9 237.5 183.7 237.6 184.2 L 232.7 184.2 C 233.1 183.7 233.9 182.8 233.9 182.7 C 233.9 182.4 227.7 164.2 225.1 156.8 L 221.0 152.0 L 227.4 151.9 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 221.0 152.0 C 221.0 161.3 220.9 182.8 221.1 183.2 C 221.1 183.4 221.2 183.7 221.4 184.2 L 226.8 184.2 C 226.2 183.8 225.2 183.3 225.1 183.2 C 225.0 182.9 225.3 164.6 225.1 156.8 L 221.0 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 246.1 152.0 C 243.5 158.8 238.6 173.3 236.5 179.6 C 236.0 181.4 235.7 182.5 235.7 182.6 C 235.6 182.8 235.6 183.7 235.6 184.2 L 240.4 184.2 C 240.0 183.7 239.2 182.8 239.3 182.7 C 239.3 182.4 245.1 164.6 247.7 157.2 L 251.7 152.0 L 246.1 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 251.7 152.0 C 251.7 161.3 251.8 182.8 251.7 183.2 C 251.7 183.4 251.5 183.7 251.4 184.2 L 246.0 184.2 C 246.6 183.8 247.6 183.3 247.6 183.2 C 247.8 182.9 247.4 164.6 247.6 156.8 L 251.7 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.0 174.5 C 196.0 168.8 205.1 155.9 205.2 155.6 C 205.3 155.5 205.3 155.2 205.4 154.9 L 201.3 151.7 C 201.5 152.1 201.8 152.9 201.8 153.0 C 201.7 153.2 194.0 164.1 190.7 168.9 L 192.0 174.5 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.0 161.7 C 196.0 167.3 205.1 180.2 205.2 180.6 C 205.3 180.7 205.3 180.9 205.4 181.3 L 201.3 184.5 C 201.5 184.0 201.8 183.3 201.8 183.2 C 201.7 183.0 194.0 172.1 190.7 167.3 L 192.0 161.7 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 214.6 152.0 C 214.6 161.3 214.7 182.8 214.6 183.2 C 214.5 183.4 214.4 183.7 214.2 184.2 L 208.7 184.2 C 209.2 183.8 210.2 183.3 210.3 183.2 C 210.3 182.8 210.2 164.8 210.3 156.9 L 214.6 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 227.4 151.9 C 230.7 160.7 237.5 182.2 237.5 182.7 C 237.5 182.9 237.5 183.7 237.6 184.2 L 232.7 184.2 C 233.1 183.7 233.9 182.8 233.9 182.7 C 233.9 182.4 227.7 164.2 225.1 156.8 L 221.0 152.0 L 227.4 151.9 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 221.0 152.0 C 221.0 161.3 220.9 182.8 221.1 183.2 C 221.1 183.4 221.2 183.7 221.4 184.2 L 226.8 184.2 C 226.2 183.8 225.2 183.3 225.1 183.2 C 225.0 182.9 225.3 164.6 225.1 156.8 L 221.0 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 246.1 152.0 C 243.5 158.8 238.6 173.3 236.5 179.6 C 236.0 181.4 235.7 182.5 235.7 182.6 C 235.6 182.8 235.6 183.7 235.6 184.2 L 240.4 184.2 C 240.0 183.7 239.2 182.8 239.3 182.7 C 239.3 182.4 245.1 164.6 247.7 157.2 L 251.7 152.0 L 246.1 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 251.7 152.0 C 251.7 161.3 251.8 182.8 251.7 183.2 C 251.7 183.4 251.5 183.7 251.4 184.2 L 246.0 184.2 C 246.6 183.8 247.6 183.3 247.6 183.2 C 247.8 182.9 247.4 164.6 247.6 156.8 L 251.7 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.0 174.5 C 196.0 168.8 205.1 155.9 205.2 155.6 C 205.3 155.5 205.3 155.2 205.4 154.9 L 201.3 151.7 C 201.5 152.1 201.8 152.9 201.8 153.0 C 201.7 153.2 194.0 164.1 190.7 168.9 L 192.0 174.5 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.0 161.7 C 196.0 167.3 205.1 180.2 205.2 180.6 C 205.3 180.7 205.3 180.9 205.4 181.3 L 201.3 184.5 C 201.5 184.0 201.8 183.3 201.8 183.2 C 201.7 183.0 194.0 172.1 190.7 167.3 L 192.0 161.7 Z"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 100.2 86.3 L 99.1 86.3 L 99.1 87.6 L 100.2 87.6 L 100.2 86.3 Z"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 69.8 65.2 L 68.8 65.2 L 68.8 66.5 L 69.8 66.5 L 69.8 65.2 Z"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 69.9 86.3 L 68.8 86.3 L 68.8 87.6 L 69.9 87.6 L 69.9 86.3 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 32.5 183.7 C 35.8 174.9 43.8 154.3 43.8 153.8 C 43.9 153.6 43.9 152.8 43.9 152.3 L 37.9 152.3 C 38.2 152.8 39.0 153.7 39.0 153.8 C 39.0 154.2 33.9 168.6 31.3 176.0 L 32.5 183.7 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 32.5 183.7 C 29.2 174.9 21.2 154.3 21.2 153.8 C 21.2 153.6 21.2 152.8 21.2 152.3 L 27.2 152.3 C 26.8 152.8 26.0 153.7 26.0 153.8 C 26.0 154.2 31.2 168.6 33.7 176.0 L 32.5 183.7 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 50.0 152.3 C 53.3 161.1 61.3 181.8 61.3 182.2 C 61.3 182.4 61.3 183.2 61.4 183.7 L 55.3 183.7 C 55.7 183.2 56.5 182.3 56.5 182.2 C 56.5 181.9 51.4 167.4 48.8 160.1 L 50.0 152.3 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 50.0 152.3 C 46.7 161.1 38.7 181.8 38.7 182.2 C 38.6 182.4 38.6 183.2 38.6 183.7 L 44.7 183.7 C 44.3 183.2 43.5 182.3 43.5 182.2 C 43.5 181.9 48.6 167.4 51.2 160.1 L 50.0 152.3 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 104.4 151.9 C 107.7 160.7 114.5 182.2 114.5 182.7 C 114.5 182.9 114.5 183.7 114.6 184.2 L 109.7 184.2 C 110.1 183.7 110.9 182.8 110.9 182.7 C 110.9 182.4 104.7 164.2 102.1 156.8 L 98.0 152.0 L 104.4 151.9 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 98.0 152.0 C 98.0 161.3 97.9 182.8 98.1 183.2 C 98.1 183.4 98.2 183.7 98.4 184.2 L 103.8 184.2 C 103.2 183.8 102.2 183.3 102.1 183.2 C 102.0 182.9 102.3 164.6 102.1 156.8 L 98.0 152.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 123.0 152.0 C 120.5 158.8 115.6 173.3 113.5 179.6 C 113.0 181.4 112.7 182.5 112.7 182.6 C 112.6 182.8 112.6 183.7 112.6 184.2 L 117.4 184.2 C 117.0 183.7 116.2 182.8 116.3 182.7 C 116.3 182.4 122.1 164.6 124.7 157.2 L 128.7 152.0 L 123.0 152.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 128.7 152.0 C 128.7 161.3 128.8 182.8 128.7 183.2 C 128.7 183.4 128.5 183.7 128.4 184.2 L 123.0 184.2 C 123.5 183.8 124.6 183.3 124.6 183.2 C 124.7 182.9 124.4 164.6 124.7 156.8 L 128.7 152.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 140.6 152.0 C 140.6 161.3 140.7 182.8 140.6 183.2 C 140.6 183.4 140.4 183.7 140.3 184.2 L 134.7 184.2 C 135.3 183.8 136.3 183.3 136.3 183.2 C 136.3 182.8 136.2 164.8 136.3 156.9 L 140.6 152.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 85.2 162.7 L 90.8 161.1 C 90.8 161.1 91.1 160.2 90.7 159.0 C 90.3 157.7 86.8 148.7 72.2 152.3 C 61.5 155.8 61.9 168.5 62.0 169.6 C 62.0 173.6 65.6 187.7 83.4 184.2 C 87.8 183.2 91.7 180.0 91.8 179.7 C 91.9 179.4 91.8 167.8 91.8 167.8 L 84.0 167.8 L 78.2 171.5 L 87.6 171.5 L 87.6 177.6 C 82.4 182.1 68.6 183.6 66.7 170.9 C 65.6 158.9 71.8 155.2 77.8 155.1 C 83.8 155.0 86.4 158.4 86.7 159.9 C 87.0 161.4 85.2 162.7 85.2 162.7 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 147.2 165.6 L 163.2 165.6 L 164.3 167.7 L 163.4 170.8 L 147.2 170.8 L 147.2 165.6 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 147.2 152.1 L 168.2 152.1 L 170.4 154.1 L 173.7 157.3 L 147.2 157.3 L 147.2 152.1 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 147.2 178.8 L 175.1 179.0 L 173.8 181.3 L 172.3 184.1 L 147.2 184.1 L 147.2 178.8 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.1 174.5 C 188.1 168.8 178.9 155.9 178.8 155.6 C 178.8 155.5 178.7 155.2 178.6 154.9 L 182.8 151.7 C 182.6 152.1 182.2 152.9 182.2 153.0 C 182.4 153.2 190.1 164.1 193.4 168.9 L 192.1 174.5 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.1 161.7 C 188.1 167.3 178.9 180.2 178.8 180.6 C 178.8 180.7 178.7 180.9 178.6 181.3 L 182.8 184.5 C 182.6 184.0 182.2 183.3 182.2 183.2 C 182.4 183.0 190.1 172.1 193.4 167.3 L 192.1 161.7 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 214.6 152.0 C 214.6 161.3 214.7 182.8 214.6 183.2 C 214.5 183.4 214.4 183.7 214.2 184.2 L 208.7 184.2 C 209.2 183.8 210.2 183.3 210.3 183.2 C 210.3 182.8 210.2 164.8 210.3 156.9 L 214.6 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 227.4 151.9 C 230.7 160.7 237.5 182.2 237.5 182.7 C 237.5 182.9 237.5 183.7 237.6 184.2 L 232.7 184.2 C 233.1 183.7 233.9 182.8 233.9 182.7 C 233.9 182.4 227.7 164.2 225.1 156.8 L 221.0 152.0 L 227.4 151.9 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 221.0 152.0 C 221.0 161.3 220.9 182.8 221.1 183.2 C 221.1 183.4 221.2 183.7 221.4 184.2 L 226.8 184.2 C 226.2 183.8 225.2 183.3 225.1 183.2 C 225.0 182.9 225.3 164.6 225.1 156.8 L 221.0 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 246.1 152.0 C 243.5 158.8 238.6 173.3 236.5 179.6 C 236.0 181.4 235.7 182.5 235.7 182.6 C 235.6 182.8 235.6 183.7 235.6 184.2 L 240.4 184.2 C 240.0 183.7 239.2 182.8 239.3 182.7 C 239.3 182.4 245.1 164.6 247.7 157.2 L 251.7 152.0 L 246.1 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 251.7 152.0 C 251.7 161.3 251.8 182.8 251.7 183.2 C 251.7 183.4 251.5 183.7 251.4 184.2 L 246.0 184.2 C 246.6 183.8 247.6 183.3 247.6 183.2 C 247.8 182.9 247.4 164.6 247.6 156.8 L 251.7 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.0 174.5 C 196.0 168.8 205.1 155.9 205.2 155.6 C 205.3 155.5 205.3 155.2 205.4 154.9 L 201.3 151.7 C 201.5 152.1 201.8 152.9 201.8 153.0 C 201.7 153.2 194.0 164.1 190.7 168.9 L 192.0 174.5 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.0 161.7 C 196.0 167.3 205.1 180.2 205.2 180.6 C 205.3 180.7 205.3 180.9 205.4 181.3 L 201.3 184.5 C 201.5 184.0 201.8 183.3 201.8 183.2 C 201.7 183.0 194.0 172.1 190.7 167.3 L 192.0 161.7 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 214.6 152.0 C 214.6 161.3 214.7 182.8 214.6 183.2 C 214.5 183.4 214.4 183.7 214.2 184.2 L 208.7 184.2 C 209.2 183.8 210.2 183.3 210.3 183.2 C 210.3 182.8 210.2 164.8 210.3 156.9 L 214.6 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 227.4 151.9 C 230.7 160.7 237.5 182.2 237.5 182.7 C 237.5 182.9 237.5 183.7 237.6 184.2 L 232.7 184.2 C 233.1 183.7 233.9 182.8 233.9 182.7 C 233.9 182.4 227.7 164.2 225.1 156.8 L 221.0 152.0 L 227.4 151.9 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 221.0 152.0 C 221.0 161.3 220.9 182.8 221.1 183.2 C 221.1 183.4 221.2 183.7 221.4 184.2 L 226.8 184.2 C 226.2 183.8 225.2 183.3 225.1 183.2 C 225.0 182.9 225.3 164.6 225.1 156.8 L 221.0 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 246.1 152.0 C 243.5 158.8 238.6 173.3 236.5 179.6 C 236.0 181.4 235.7 182.5 235.7 182.6 C 235.6 182.8 235.6 183.7 235.6 184.2 L 240.4 184.2 C 240.0 183.7 239.2 182.8 239.3 182.7 C 239.3 182.4 245.1 164.6 247.7 157.2 L 251.7 152.0 L 246.1 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 251.7 152.0 C 251.7 161.3 251.8 182.8 251.7 183.2 C 251.7 183.4 251.5 183.7 251.4 184.2 L 246.0 184.2 C 246.6 183.8 247.6 183.3 247.6 183.2 C 247.8 182.9 247.4 164.6 247.6 156.8 L 251.7 152.0 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.0 174.5 C 196.0 168.8 205.1 155.9 205.2 155.6 C 205.3 155.5 205.3 155.2 205.4 154.9 L 201.3 151.7 C 201.5 152.1 201.8 152.9 201.8 153.0 C 201.7 153.2 194.0 164.1 190.7 168.9 L 192.0 174.5 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 192.0 161.7 C 196.0 167.3 205.1 180.2 205.2 180.6 C 205.3 180.7 205.3 180.9 205.4 181.3 L 201.3 184.5 C 201.5 184.0 201.8 183.3 201.8 183.2 C 201.7 183.0 194.0 172.1 190.7 167.3 L 192.0 161.7 Z"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 89.3 18.1 L 87.0 21.1 L 87.3 22.0 L 91.5 21.7 L 90.4 29.4 L 95.8 29.1 L 94.5 39.4 L 95.3 41.3 L 99.5 35.2 L 98.4 33.5 L 92.3 34.0 L 93.6 25.3 L 88.8 25.5 L 89.6 18.6"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 12.4 C 85.3 12.4 84.5 13.8 84.5 15.4 C 84.5 17.0 85.3 18.4 86.3 18.4 C 87.2 18.4 88.0 17.0 88.0 15.4 C 88.0 13.8 87.2 12.4 86.3 12.4 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 86.3 13.3 C 85.6 13.3 85.1 14.3 85.1 15.4 C 85.1 16.5 85.6 17.5 86.3 17.5 C 87.0 17.5 87.5 16.5 87.5 15.4 C 87.5 14.3 87.0 13.3 86.3 13.3 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 14.5 C 86.0 14.5 85.8 14.9 85.8 15.4 C 85.8 15.9 86.0 16.3 86.3 16.3 C 86.5 16.3 86.8 15.9 86.8 15.4 C 86.8 14.9 86.5 14.5 86.3 14.5 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.1 40.0 L 82.9 40.0 L 82.0 41.9 L 82.9 49.5 L 86.1 49.5 L 87.0 41.9 L 86.1 40.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 84.9 49.8 L 83.9 49.8 C 83.9 50.5 84.0 51.2 84.2 51.7 C 84.4 52.0 84.7 52.3 84.9 52.7 C 85.1 53.0 85.1 53.6 84.9 54.1 L 85.9 55.5 C 86.3 54.9 86.4 54.0 86.3 52.7 C 86.1 52.0 85.8 51.4 85.4 50.9 C 85.2 50.6 85.0 50.2 84.9 49.8 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 84.1 54.5 C 83.6 54.1 83.4 53.4 83.3 52.6 C 83.2 52.3 82.8 52.0 82.7 52.3 C 82.7 53.6 82.9 54.7 83.3 55.5 C 83.7 56.1 84.1 56.5 84.7 56.5 C 85.0 56.4 85.2 56.3 85.3 56.2 C 85.0 55.8 84.8 55.4 84.5 55.0 C 84.4 54.8 84.2 54.6 84.1 54.5 Z"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 91.9 65.1 C 89.5 61.5 87.0 57.9 84.6 54.3 C 84.5 54.2 84.2 53.7 84.0 54.2"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 92.6 65.6 C 92.6 65.3 92.4 65.0 92.2 65.0 C 91.9 65.0 91.7 65.3 91.7 65.6"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 96.7 67.3 L 96.0 67.3 L 96.0 85.2 L 96.7 85.2 L 96.7 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 98.3 67.3 L 97.6 67.3 L 97.6 85.2 L 98.3 85.2 L 98.3 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 95.2 67.3 L 94.4 67.3 L 94.4 85.2 L 95.2 85.2 L 95.2 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 93.6 67.3 L 92.8 67.3 L 92.8 85.2 L 93.6 85.2 L 93.6 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 92.0 67.3 L 91.2 67.3 L 91.2 85.2 L 92.0 85.2 L 92.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 90.4 67.3 L 89.6 67.3 L 89.6 85.2 L 90.4 85.2 L 90.4 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 88.8 67.3 L 88.0 67.3 L 88.0 85.2 L 88.8 85.2 L 88.8 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 87.2 67.3 L 86.4 67.3 L 86.4 85.2 L 87.2 85.2 L 87.2 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 85.6 67.3 L 84.8 67.3 L 84.8 85.2 L 85.6 85.2 L 85.6 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 84.0 67.3 L 83.2 67.3 L 83.2 85.2 L 84.0 85.2 L 84.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 82.4 67.3 L 81.7 67.3 L 81.7 85.2 L 82.4 85.2 L 82.4 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 80.8 67.3 L 80.1 67.3 L 80.1 85.2 L 80.8 85.2 L 80.8 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 79.3 67.3 L 78.5 67.3 L 78.5 85.2 L 79.3 85.2 L 79.3 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 77.7 67.3 L 76.9 67.3 L 76.9 85.2 L 77.7 85.2 L 77.7 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 76.0 67.3 L 75.3 67.3 L 75.3 85.2 L 76.0 85.2 L 76.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 74.5 67.3 L 73.7 67.3 L 73.7 85.2 L 74.5 85.2 L 74.5 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 72.9 67.3 L 72.1 67.3 L 72.1 85.2 L 72.9 85.2 L 72.9 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 71.3 67.3 L 70.5 67.3 L 70.5 85.2 L 71.3 85.2 L 71.3 67.3 Z"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 86.0 54.0 C 86.0 54.0 86.1 52.7 85.7 52.3 C 85.4 52.1 85.3 52.4 85.4 52.5 C 85.4 52.6 85.7 53.7 85.3 54.6 C 85.4 54.8 85.6 55.1 85.6 55.1 C 85.6 55.1 85.9 54.7 86.0 54.0 Z"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.1 55.0 C 84.0 54.9 83.8 55.4 84.1 55.7 C 84.5 55.9 84.8 55.8 85.0 55.8 C 84.9 55.7 84.7 55.3 84.5 55.0 C 84.4 55.0 84.2 55.0 84.1 55.0 Z"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.5 42.1 C 84.0 42.1 83.7 42.4 83.7 42.9 C 83.7 43.3 84.0 43.7 84.5 43.7 C 84.9 43.7 85.3 43.3 85.3 42.9 C 85.3 42.4 84.9 42.1 84.5 42.1 Z"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.4 47.3 C 84.2 47.3 84.0 47.5 84.0 47.7 C 84.0 48.0 84.2 48.1 84.4 48.1 C 84.7 48.1 84.8 48.0 84.8 47.7 C 84.8 47.5 84.7 47.3 84.4 47.3 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 83.2 48.6 C 83.1 48.6 83.0 48.7 83.0 48.8 C 83.0 48.9 83.1 49.0 83.2 49.0 C 83.3 49.0 83.4 48.9 83.4 48.8 C 83.4 48.7 83.3 48.6 83.2 48.6 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 85.7 48.6 C 85.6 48.6 85.5 48.7 85.5 48.8 C 85.5 48.9 85.6 49.0 85.7 49.0 C 85.9 49.0 86.0 48.9 86.0 48.8 C 86.0 48.7 85.9 48.6 85.7 48.6 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 86.6 42.0 C 86.5 42.0 86.4 42.1 86.4 42.2 C 86.4 42.4 86.5 42.5 86.6 42.5 C 86.7 42.5 86.8 42.4 86.8 42.2 C 86.8 42.1 86.7 42.0 86.6 42.0 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 82.4 42.0 C 82.2 42.0 82.2 42.1 82.2 42.2 C 82.2 42.4 82.2 42.5 82.4 42.5 C 82.5 42.5 82.6 42.4 82.6 42.2 C 82.6 42.1 82.5 42.0 82.4 42.0 Z"/><path fill="#565757" stroke="#f2b300" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 177.5 31.1 C 177.7 31.1 178.0 31.1 178.2 31.1 L 179.3 30.9 C 180.2 30.8 181.1 30.8 182.0 30.6 C 182.8 30.5 183.5 30.5 184.3 30.4 C 184.4 30.4 184.5 30.4 184.7 30.4 L 186.6 30.2 C 187.1 30.1 187.4 30.1 187.8 30.4 C 188.3 30.6 189.1 30.6 189.5 30.8 C 189.3 31.1 188.5 32.7 188.2 33.1 L 186.9 35.4 L 186.4 35.2 C 185.8 35.0 185.2 34.9 184.6 34.6 C 184.3 34.5 183.7 34.3 183.4 34.3 C 183.2 34.4 182.9 34.4 182.8 34.6 C 182.6 34.8 182.4 35.2 182.2 35.5 C 182.7 36.6 183.3 37.4 183.8 38.5 C 183.7 38.6 182.2 39.0 181.9 39.1 L 180.5 39.5 C 180.1 39.7 179.4 40.5 179.6 41.1 C 179.7 41.2 180.0 41.2 180.1 41.2 L 181.2 41.5 C 181.3 41.5 181.4 41.5 181.5 41.5 L 183.4 41.9 C 183.5 42.0 183.8 42.0 183.9 42.1 C 183.9 42.5 183.9 42.7 184.1 43.1 C 184.1 43.3 184.4 43.1 184.5 43.0 C 184.7 42.9 184.9 42.6 185.0 42.6 C 185.1 42.5 185.3 42.6 185.5 42.7 L 186.8 43.4 C 186.9 43.5 187.1 43.5 187.2 43.6 C 187.4 43.7 187.5 43.8 187.7 43.6 C 188.2 43.0 188.0 42.6 187.9 42.0 L 187.6 40.6 C 187.5 40.3 187.5 40.4 187.6 40.3 C 188.4 39.4 191.2 36.4 191.9 35.3 C 192.0 35.1 192.1 35.0 192.2 34.8 C 192.6 34.4 193.6 32.8 193.8 32.7 C 193.9 32.6 194.8 32.9 195.0 32.9 C 195.3 32.9 195.7 33.0 196.1 33.0 C 196.2 33.1 196.2 33.0 196.2 33.1 L 198.8 39.1 C 199.1 38.8 199.7 38.0 199.8 37.6 C 200.0 36.9 199.8 35.5 199.7 34.8 C 199.7 34.7 199.6 34.5 199.6 34.4 L 199.2 31.0 C 199.2 30.9 199.2 30.8 199.2 30.6 L 198.6 25.4 C 198.5 24.6 198.5 24.8 199.2 23.7 C 200.7 21.3 202.6 17.7 203.6 14.8 C 203.8 14.0 204.4 12.1 204.0 11.2 C 203.4 9.7 202.6 11.1 201.1 11.5 C 200.1 11.7 199.2 13.5 198.8 14.6 C 198.5 15.5 198.1 16.1 197.6 16.9 L 195.7 20.2 C 194.9 21.6 195.2 21.3 194.0 21.9 L 190.8 23.2 C 190.1 23.6 189.4 23.9 188.7 24.2 L 181.3 27.4 C 181.1 27.5 178.3 28.6 178.2 28.8 C 177.7 29.3 177.7 29.8 177.6 30.6 C 177.5 30.8 177.5 30.9 177.5 31.1 Z"/></svg>
+        </div>
+        <div class="bcard-details reveal delay-1">
+          <h3>Amit Naik</h3>
+          <p style="color:rgba(255,255,255,0.6);margin-bottom:1.5rem">Director &amp; Contact Person<br>Import · Export · Trading<br>Latur, Maharashtra, India</p>
+          <div class="bcard-contacts">
+            <a href="tel:+919422014528"><span class="ci">📞</span> +91 94220 14528</a>
+            <a href="tel:+919112127272"><span class="ci">📞</span> +91 91121 27272</a>
+            <a href="mailto:info@vagmiexim.com"><span class="ci">📧</span> info@vagmiexim.com</a>
+            <a href="mailto:sales@vagmiexim.com"><span class="ci">📧</span> sales@vagmiexim.com</a>
+            <a href="https://wa.me/919422014528" target="_blank"><span class="ci">💬</span> Chat on WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact-section" id="contact">
+    <div class="container contact-grid">
+      <div class="contact-info reveal">
+        <span class="label white-label">Get In Touch</span>
+        <h2 class="white-h">Let's Start a Conversation</h2>
+        <p class="white-p">Whether you're a buyer, seller, or looking for a reliable trading partner, reach out and we'll respond promptly.</p>
+        <div class="contact-details">
+          <div class="contact-item">
+            <span class="c-icon">📍</span>
+            <div>
+              <strong>Address</strong><br>
+              R6/294, Naik Niwas, Ganj Golai East,<br>Latur – 413512, Maharashtra, India
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">📧</span>
+            <div>
+              <strong>Email</strong><br>
+              <a href="mailto:info@vagmiexim.com">info@vagmiexim.com</a><br>
+              <a href="mailto:sales@vagmiexim.com">sales@vagmiexim.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">📞</span>
+            <div>
+              <strong>Contact Person — Amit Naik</strong><br>
+              <a href="tel:+919422014528">+91 94220 14528</a><br>
+              <a href="tel:+919112127272">+91 91121 27272</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <span class="c-icon">💬</span>
+            <div>
+              <strong>WhatsApp</strong><br>
+              <a href="https://wa.me/919422014528" target="_blank">Chat on WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form reveal delay-1">
+        <form class="contact-form" onsubmit="handleForm(event)">
+    
+    <div class="form-group">
+        <label>Name</label>
+        <input type="text" id="name" required>
+    </div>
+
+    <div class="form-group">
+        <label>Email</label>
+        <input type="email" id="email" required>
+    </div>
+
+    <div class="form-group">
+        <label>Phone</label>
+        <input type="tel" id="phone" required>
+    </div>
+
+    <div class="form-group">
+        <label>Message</label>
+        <textarea id="message" rows="5" required></textarea>
+    </div>
+
+    <button type="submit" class="btn-primary full-width">
+        Send Inquiry
+    </button>
+
+    <div id="formMsg" class="form-msg"></div>
+</form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#hero" class="logo logo-img-wrap" style="text-decoration:none"><svg xmlns="http://www.w3.org/2000/svg" viewBox="62 8 84 178" width="30" height="64" aria-label="Vagmi Exim Logo"><path fill="#565757" stroke="none" fill-rule="evenodd" d="M -28.0 -7.6 L 144.6 -7.6 L 144.6 199.6 L -28.0 199.6 L -28.0 -7.6 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 15.4 L 87.0 21.1 L 95.3 41.3 L 103.5 58.0 L 119.5 90.4 L 136.0 123.4 L 142.7 136.8 L 146.4 136.9 L 145.4 132.1 L 140.1 117.8 L 123.9 84.7 L 107.7 52.1 L 99.5 35.2 L 89.3 18.1 L 86.3 15.4 Z"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 100.6 37.5 L 99.0 48.9 L 106.0 48.6 L 106.9 50.4 L 102.7 56.4 L 101.8 54.5 L 103.3 43.2 L 96.3 43.4"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 107.7 52.1 L 103.5 58.0 L 104.4 60.0 L 111.3 59.4 L 109.8 70.7 L 116.6 70.0 L 115.1 81.5 L 122.0 81.0 L 123.0 82.9 L 118.7 88.8 L 117.8 87.0 L 119.3 75.6 L 112.4 76.0 L 114.0 64.8 L 107.1 65.3 L 108.6 54.0"/><path fill="none" stroke="#565757" stroke-width="0.3" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 123.9 84.7 L 119.6 90.6 L 120.5 92.4 L 127.4 91.9 L 125.9 103.1 L 132.7 102.7 L 131.2 114.0 L 138.1 113.6 L 139.0 115.4 L 134.8 121.2 L 133.9 119.3 L 135.5 108.3 L 128.5 108.5 L 130.1 97.3 L 123.2 97.8 L 124.7 86.4"/><path fill="#e40057" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 84.4 40.1 L 84.5 15.6 C 84.4 14.6 85.2 11.3 87.1 12.8 C 90.3 14.8 148.4 112.6 148.4 112.6"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 12.4 C 85.3 12.4 84.5 13.8 84.5 15.4 C 84.5 17.0 85.3 18.4 86.3 18.4 C 87.2 18.4 88.0 17.0 88.0 15.4 C 88.0 13.8 87.2 12.4 86.3 12.4 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 86.3 13.3 C 85.6 13.3 85.1 14.3 85.1 15.4 C 85.1 16.5 85.6 17.5 86.3 17.5 C 87.0 17.5 87.5 16.5 87.5 15.4 C 87.5 14.3 87.0 13.3 86.3 13.3 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.3 14.5 C 86.0 14.5 85.8 14.9 85.8 15.4 C 85.8 15.9 86.0 16.3 86.3 16.3 C 86.5 16.3 86.8 15.9 86.8 15.4 C 86.8 14.9 86.5 14.5 86.3 14.5 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 86.1 40.0 L 82.9 40.0 L 82.0 41.9 L 82.9 49.5 L 86.1 49.5 L 87.0 41.9 L 86.1 40.0 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 84.9 49.8 L 83.9 49.8 C 83.9 50.5 84.0 51.2 84.2 51.7 C 84.4 52.0 84.7 52.3 84.9 52.7 C 85.1 53.0 85.1 53.6 84.9 54.1 L 85.9 55.5 C 86.3 54.9 86.4 54.0 86.3 52.7 C 86.1 52.0 85.8 51.4 85.4 50.9 C 85.2 50.6 85.0 50.2 84.9 49.8 Z"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 84.1 54.5 C 83.6 54.1 83.4 53.4 83.3 52.6 C 83.2 52.3 82.8 52.0 82.7 52.3 C 82.7 53.6 82.9 54.7 83.3 55.5 C 83.7 56.1 84.1 56.5 84.7 56.5 C 85.0 56.4 85.2 56.3 85.3 56.2 C 85.0 55.8 84.8 55.4 84.5 55.0 C 84.4 54.8 84.2 54.6 84.1 54.5 Z"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 83.1 55.7 L 77.1 65.0"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 77.3 65.6 C 77.3 65.3 77.1 65.0 76.9 65.0 C 76.6 65.0 76.4 65.3 76.4 65.6"/><path fill="#f2b300" stroke="none" fill-rule="evenodd" d="M 98.3 67.3 L 98.3 65.6 L 70.5 65.6 L 70.5 67.3 L 69.5 67.3 L 69.5 85.3 L 70.5 85.3 L 70.5 87.3 L 98.3 87.3 L 98.3 85.3 L 99.4 85.3 L 99.4 67.3 L 98.3 67.3 Z"/><path fill="none" stroke="#f2b300" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 100.2 65.2 L 99.1 65.2 L 99.1 66.5 L 100.2 66.5 L 100.2 65.2 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 96.7 67.3 L 96.0 67.3 L 96.0 85.2 L 96.7 85.2 L 96.7 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 98.3 67.3 L 97.6 67.3 L 97.6 85.2 L 98.3 85.2 L 98.3 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 95.2 67.3 L 94.4 67.3 L 94.4 85.2 L 95.2 85.2 L 95.2 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 93.6 67.3 L 92.8 67.3 L 92.8 85.2 L 93.6 85.2 L 93.6 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 92.0 67.3 L 91.2 67.3 L 91.2 85.2 L 92.0 85.2 L 92.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 90.4 67.3 L 89.6 67.3 L 89.6 85.2 L 90.4 85.2 L 90.4 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 88.8 67.3 L 88.0 67.3 L 88.0 85.2 L 88.8 85.2 L 88.8 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 87.2 67.3 L 86.4 67.3 L 86.4 85.2 L 87.2 85.2 L 87.2 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 85.6 67.3 L 84.8 67.3 L 84.8 85.2 L 85.6 85.2 L 85.6 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 84.0 67.3 L 83.2 67.3 L 83.2 85.2 L 84.0 85.2 L 84.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 82.4 67.3 L 81.7 67.3 L 81.7 85.2 L 82.4 85.2 L 82.4 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 80.8 67.3 L 80.1 67.3 L 80.1 85.2 L 80.8 85.2 L 80.8 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 79.3 67.3 L 78.5 67.3 L 78.5 85.2 L 79.3 85.2 L 79.3 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 77.7 67.3 L 76.9 67.3 L 76.9 85.2 L 77.7 85.2 L 77.7 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 76.0 67.3 L 75.3 67.3 L 75.3 85.2 L 76.0 85.2 L 76.0 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 74.5 67.3 L 73.7 67.3 L 73.7 85.2 L 74.5 85.2 L 74.5 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 72.9 67.3 L 72.1 67.3 L 72.1 85.2 L 72.9 85.2 L 72.9 67.3 Z"/><path fill="#565757" stroke="none" fill-rule="evenodd" d="M 71.3 67.3 L 70.5 67.3 L 70.5 85.2 L 71.3 85.2 L 71.3 67.3 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 86.0 54.0 C 86.0 54.0 86.1 52.7 85.7 52.3 C 85.4 52.1 85.3 52.4 85.4 52.5 C 85.4 52.6 85.7 53.7 85.3 54.6 C 85.4 54.8 85.6 55.1 85.6 55.1 C 85.6 55.1 85.9 54.7 86.0 54.0 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.1 55.0 C 84.0 54.9 83.8 55.4 84.1 55.7 C 84.5 55.9 84.8 55.8 85.0 55.8 C 84.9 55.7 84.7 55.3 84.5 55.0 C 84.4 55.0 84.2 55.0 84.1 55.0 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.5 41.6 C 84.0 41.6 83.7 42.2 83.7 42.9 C 83.7 43.6 84.0 44.2 84.5 44.2 C 84.9 44.2 85.3 43.6 85.3 42.9 C 85.3 42.2 84.9 41.6 84.5 41.6 Z"/><path fill="none" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="nonzero" d="M 84.4 47.0 C 84.2 47.0 84.0 47.4 84.0 47.7 C 84.0 48.1 84.2 48.4 84.4 48.4 C 84.7 48.4 84.8 48.1 84.8 47.7 C 84.8 47.4 84.7 47.0 84.4 47.0 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 83.2 48.4 C 83.1 48.4 83.0 48.6 83.0 48.8 C 83.0 49.0 83.1 49.2 83.2 49.2 C 83.3 49.2 83.4 49.0 83.4 48.8 C 83.4 48.6 83.3 48.4 83.2 48.4 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 85.7 48.4 C 85.6 48.4 85.5 48.6 85.5 48.8 C 85.5 49.0 85.6 49.2 85.7 49.2 C 85.9 49.2 86.0 49.0 86.0 48.8 C 86.0 48.6 85.9 48.4 85.7 48.4 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 86.6 41.9 C 86.5 41.9 86.4 42.0 86.4 42.2 C 86.4 42.5 86.5 42.6 86.6 42.6 C 86.7 42.6 86.8 42.5 86.8 42.2 C 86.8 42.0 86.7 41.9 86.6 41.9 Z"/><path fill="#565757" stroke="#565757" stroke-width="0.7" stroke-linecap="butt" stroke-linejoin="miter" fill-rule="evenodd" d="M 82.4 41.9 C 82.2 41.9 82.2 42.0 82.2 42.2 C 82.2 42.5 82.2 42.6 82.4 42.6 C 82.5 42.6 82.6 42.5 82.6 42.2 C 82.6 42.0 82.5 41.9 82.4 41.9 Z"/></svg><span class="logo-wordmark"><span class="wm-vagmi">VAGMI</span><span class="wm-exim">EXIM</span></span></a>
+        <p class="footer-tagline">Import · Export · Trading</p>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#powders">Powders</a>
+        <a href="#vision">Vision</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <p class="footer-copy">© 2025 Vagmi Exim. All rights reserved. · Latur, Maharashtra, India</p>
+    </div>
+  </footer>
+
+
+  <!-- WhatsApp Float Button -->
+  <a class="wa-float" href="https://wa.me/919422014528" target="_blank" rel="noopener" title="Chat on WhatsApp" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+  </a>
+  <!-- Back to Top -->
+  <button class="btt-btn" id="bttBtn" title="Back to top" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
