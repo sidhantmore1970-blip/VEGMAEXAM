@@ -1,165 +1,150 @@
-// NAV scroll effect
-const navbar = document.getElementById('navbar');
-window.addEventListener('scroll', () => {
-  navbar.classList.toggle('scrolled', window.scrollY > 50);
-});
+const navbar = document.getElementById("navbar");
+const hamburger = document.getElementById("hamburger");
+const mobileMenu = document.getElementById("mobileMenu");
+const progressBar = document.getElementById("progress-bar");
+const backTop = document.getElementById("backTop");
+const inquiryForm = document.getElementById("inquiryForm");
+const formMsg = document.getElementById("formMsg");
+const whatsappNumber = "917499770195";
 
-// Mobile menu
-const hamburger = document.getElementById('hamburger');
-const mobileMenu = document.getElementById('mobileMenu');
-hamburger.addEventListener('click', () => {
-  mobileMenu.classList.toggle('open');
-});
-function closeMobile() {
-  mobileMenu.classList.remove('open');
+function updateNav() {
+  if (!navbar) return;
+  navbar.classList.toggle("scrolled", window.scrollY > 40);
 }
 
-// Scroll reveal
-const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.12 });
-reveals.forEach(el => observer.observe(el));
-
-// Contact form
-// Contact form -> WhatsApp
-function handleForm(e) {
-  e.preventDefault();
-
-  const name =
-    document.getElementById('name')?.value || '';
-
-  const email =
-    document.getElementById('email')?.value || '';
-
-  const phone =
-    document.getElementById('phone')?.value || '';
-
-  const message =
-    document.getElementById('message')?.value || '';
-
-  const whatsappMessage = `
-🌍 NEW EXPORT INQUIRY
-
-👤 Name: ${name}
-
-📧 Email: ${email}
-
-📱 Phone: ${phone}
-
-📝 Message:
-${message}
-`;
-
-  const whatsappURL =
-    `https://wa.me/918208468798?text=${encodeURIComponent(whatsappMessage)}`;
-
-  window.open(whatsappURL, '_blank');
-
-  const msg = document.getElementById('formMsg');
-  if (msg) {
-    msg.textContent = 'Opening WhatsApp...';
-  }
-
-  e.target.reset();
-}
-// Smooth active nav on scroll
-const sections = document.querySelectorAll('section[id]');
-window.addEventListener('scroll', () => {
-  const scrollY = window.scrollY + 120;
-  sections.forEach(section => {
-    const link = document.querySelector(`.nav-links a[href="#${section.id}"]`);
-    if (!link) return;
-    if (section.offsetTop <= scrollY && section.offsetTop + section.offsetHeight > scrollY) {
-      document.querySelectorAll('.nav-links a').forEach(l => l.style.color = '');
-      link.style.color = '#E8B85A';
-    }
-  });
-});
-
-// ── Scroll progress bar ──────────────────────────────────────────────────────
-const progressBar = document.getElementById('progress-bar');
 function updateProgress() {
   if (!progressBar) return;
-  const scrolled = window.scrollY;
   const total = document.documentElement.scrollHeight - window.innerHeight;
-  progressBar.style.width = (total > 0 ? (scrolled / total) * 100 : 0) + '%';
-}
-window.addEventListener('scroll', updateProgress, { passive: true });
-
-// ── Back to top ──────────────────────────────────────────────────────────────
-const bttBtn = document.getElementById('bttBtn');
-window.addEventListener('scroll', () => {
-  if (bttBtn) bttBtn.classList.toggle('visible', window.scrollY > 450);
-}, { passive: true });
-if (bttBtn) {
-  bttBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+  const percent = total > 0 ? (window.scrollY / total) * 100 : 0;
+  progressBar.style.width = `${percent}%`;
 }
 
-// ── Animated stat counters ───────────────────────────────────────────────────
-function runCounter(el) {
-  if (el.dataset.counted) return;
-  el.dataset.counted = 'true';
-  const target = parseInt(el.dataset.target, 10);
-  const suffix = el.dataset.suffix || '';
-  if (isNaN(target)) return;
-  const duration = 900;
-  const start = performance.now();
-  function step(now) {
-    const elapsed = now - start;
-    const progress = Math.min(elapsed / duration, 1);
-    const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
-    el.textContent = Math.round(eased * target) + suffix;
-    if (progress < 1) requestAnimationFrame(step);
-    else el.classList.add('counted');
+function closeMobileMenu() {
+  if (!mobileMenu || !hamburger || !navbar) return;
+  mobileMenu.classList.remove("open");
+  navbar.classList.remove("open");
+  hamburger.setAttribute("aria-expanded", "false");
+}
+
+function openCategory(category) {
+  document.querySelectorAll(".category-tab").forEach((tab) => {
+    tab.classList.toggle("active", tab.dataset.category === category);
+  });
+
+  document.querySelectorAll(".product-panel").forEach((panel) => {
+    panel.classList.toggle("active", panel.dataset.panel === category);
+  });
+
+  document.getElementById("products")?.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function setInquiryCategory(category) {
+  const select = document.getElementById("productCategory");
+  const message = document.getElementById("message");
+
+  if (select) {
+    select.value = category;
   }
-  requestAnimationFrame(step);
+
+  if (message && !message.value.trim()) {
+    message.value = `I want to request a product from ${category}. Please share availability, quality details, quantity options and sampling process.`;
+  }
+
+  document.getElementById("contact")?.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
-const counterEls = document.querySelectorAll('.stat-num[data-target]');
-if (counterEls.length) {
-  const counterObs = new IntersectionObserver((entries) => {
-    entries.forEach(e => { if (e.isIntersecting) runCounter(e.target); });
-  }, { threshold: 0.5 });
-  counterEls.forEach(el => counterObs.observe(el));
-}
+window.addEventListener("scroll", () => {
+  updateNav();
+  updateProgress();
+  if (backTop) backTop.classList.toggle("visible", window.scrollY > 500);
+}, { passive: true });
 
-// ── Flip business card on click ──────────────────────────────────────────────
-const bcardWrap = document.querySelector('.bcard-svg-wrap');
-if (bcardWrap) {
-  let flipped = false;
-  bcardWrap.title = 'Click to flip card';
-  bcardWrap.style.transition = 'transform 0.6s ease, box-shadow 0.4s ease';
-  bcardWrap.addEventListener('click', () => {
-    flipped = !flipped;
-    bcardWrap.style.transform = flipped
-      ? 'rotateY(180deg) translateY(-8px)'
-      : 'rotateY(0deg)';
+if (hamburger && mobileMenu && navbar) {
+  hamburger.addEventListener("click", () => {
+    const isOpen = mobileMenu.classList.toggle("open");
+    navbar.classList.toggle("open", isOpen);
+    hamburger.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  mobileMenu.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", closeMobileMenu);
   });
 }
 
-
-// Close mobile menu on outside click
-document.addEventListener('click', (e) => {
-  if (mobileMenu && mobileMenu.classList.contains('open')) {
-    if (!mobileMenu.contains(e.target) && !hamburger.contains(e.target)) {
-      closeMobile();
-    }
+document.addEventListener("click", (event) => {
+  if (!mobileMenu || !hamburger || !mobileMenu.classList.contains("open")) return;
+  if (!mobileMenu.contains(event.target) && !hamburger.contains(event.target)) {
+    closeMobileMenu();
   }
 });
 
-// Lazy-highlight active nav section on load
-updateProgress();
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) entry.target.classList.add("visible");
+  });
+}, { threshold: 0.14 });
 
-// ── Mobile accordion for Products / Powders ──────────────────────────────────
-function toggleMobSection(el) {
-  el.classList.toggle('open');
-  const sub = el.nextElementSibling;
-  if (sub && sub.classList.contains('mob-sub-links')) {
-    sub.classList.toggle('open');
-  }
+document.querySelectorAll(".reveal").forEach((element) => {
+  revealObserver.observe(element);
+});
+
+document.querySelectorAll(".category-tab").forEach((tab) => {
+  tab.addEventListener("click", () => openCategory(tab.dataset.category));
+});
+
+document.querySelectorAll("[data-category-link]").forEach((link) => {
+  link.addEventListener("click", () => openCategory(link.dataset.categoryLink));
+});
+
+document.querySelectorAll(".see-all-btn").forEach((button) => {
+  button.addEventListener("click", () => {
+    const panel = button.closest(".product-panel");
+    if (!panel) return;
+    const expanded = panel.classList.toggle("expanded");
+    button.textContent = expanded ? "Show Less" : "See All";
+  });
+});
+
+document.querySelectorAll(".request-btn").forEach((button) => {
+  button.addEventListener("click", () => setInquiryCategory(button.dataset.request));
+});
+
+if (backTop) {
+  backTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 }
+
+if (inquiryForm) {
+  inquiryForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    const name = document.getElementById("name")?.value.trim() || "";
+    const email = document.getElementById("email")?.value.trim() || "";
+    const phone = document.getElementById("phone")?.value.trim() || "";
+    const category = document.getElementById("productCategory")?.value || "";
+    const message = document.getElementById("message")?.value.trim() || "";
+
+    const whatsappMessage = [
+      "New Vagmi Exim Product Inquiry",
+      "",
+      `Name: ${name}`,
+      `Email: ${email}`,
+      `Phone: ${phone}`,
+      `Product Category: ${category}`,
+      "",
+      "Message:",
+      message
+    ].join("\n");
+
+    const url = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+    window.open(url, "_blank", "noopener");
+
+    if (formMsg) {
+      formMsg.textContent = "Opening WhatsApp with your inquiry...";
+    }
+  });
+}
+
+updateNav();
+updateProgress();
