@@ -97,11 +97,25 @@ document.querySelectorAll("[data-category-link]").forEach((link) => {
 });
 
 document.querySelectorAll(".see-all-btn").forEach((button) => {
+  button.setAttribute("aria-expanded", "false");
+
   button.addEventListener("click", () => {
     const panel = button.closest(".product-panel");
     if (!panel) return;
+
     const expanded = panel.classList.toggle("expanded");
+    button.setAttribute("aria-expanded", String(expanded));
+    button.disabled = true;
     button.textContent = expanded ? "Show Less" : "See All";
+
+    window.setTimeout(() => {
+      button.disabled = false;
+      if (expanded) {
+        panel.querySelector(".extra-product")?.scrollIntoView({ behavior: "smooth", block: "nearest" });
+      } else {
+        panel.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 260);
   });
 });
 
